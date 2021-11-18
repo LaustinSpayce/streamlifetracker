@@ -1,8 +1,42 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/Gameplayborder.png");
+  width: 1920px;
+  height: 1080px;
+  background-size: 100%;
 }
 
 a {
   color: #00B7FF;
+}
+
+.life-container {
+  display: flex;
+  width: 750px;
+  height: 65px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.padding-before {
+  width: 80px;
+}
+
+.player-name {
+  flex: 'flex-grow';
+  width: 400px;
+  height: 40px;
+  font-size: 52px;
+  font-family: "Amanda Std";
+  flex-grow: 5;
+}
+
+.player-life {
+  text-align: center;
+  font-family: "Dialog Cond SemiBold";
+  color: white;
+  padding-top: 6px;
+  text-shadow: 5px 5px #000000;
+  font-size: 64px;
+  width: 70px;
+  -webkit-text-stroke: 3px black;
 }
