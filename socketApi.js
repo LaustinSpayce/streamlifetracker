@@ -12,4 +12,17 @@ socketApi.sendNotification = function() {
     io.sockets.emit('hello', {msg: 'Hello World!'});
 }
 
+io.on("connection", (socket) => {
+  socket.on("chat message", (msg) => {
+    console.log('message', msg)
+    io.emit('chat message', msg);
+  });
+  socket.on("Lifetotals", (obj) => {
+    console.log('lifetotals', obj)
+    io.emit('lifetotals', obj);
+  });
+});
+
+
+
 module.exports = socketApi;

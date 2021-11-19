@@ -4,10 +4,9 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
-const counterRouter = require('./routes/counter');
+const spectatorRouter = require('./routes/spectator');
 
 const app = express();
-const io = require('socket.io');
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
@@ -20,6 +19,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/spectator', spectatorRouter);
 
 module.exports = app;
