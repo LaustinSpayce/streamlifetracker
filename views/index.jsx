@@ -6,8 +6,9 @@ var Lifecontainer = require('./elements/lifecontainer');
 function HelloMessage(props) {
   return (
     <DefaultLayout title={props.title}>
-      <Container>
-        <Lifecontainer/>
+      <Container >
+        <Lifecontainer player="A"/>
+        <Lifecontainer player="B"/>
       </Container>
     </DefaultLayout>
   );

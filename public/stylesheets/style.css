@@ -1,42 +1,54 @@
 body {
-  background-image: url("../images/Gameplayborder.png");
-  width: 1920px;
-  height: 1080px;
-  background-size: 100%;
+
 }
 
 a {
   color: #00B7FF;
 }
 
+#divA {
+  padding-top: 15px;
+}
+
+#divB {
+  padding-bottom: 28px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1080px;
+}
+
 .life-container {
   display: flex;
-  width: 750px;
+  width: 865px;
   height: 65px;
   flex-wrap: nowrap;
   align-items: center;
 }
 
 .padding-before {
-  width: 80px;
+  width: 120px;
 }
 
 .player-name {
   flex: 'flex-grow';
-  width: 400px;
+  width: 525px;
   height: 40px;
   font-size: 52px;
-  font-family: "Amanda Std";
+  font-family: "Amanda Std", Georgia, 'Times New Roman', Times, serif;
   flex-grow: 5;
 }
 
 .player-life {
   text-align: center;
-  font-family: "Dialog Cond SemiBold";
+  font-family: "Dialog Cond SemiBold", Impact, Arial, sans-serif;
   color: white;
-  padding-top: 6px;
+  padding-top: 10px;
   text-shadow: 5px 5px #000000;
-  font-size: 64px;
+  font-size: 72px;
   width: 70px;
   -webkit-text-stroke: 3px black;
 }

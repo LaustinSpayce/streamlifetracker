@@ -1,7 +1,7 @@
 var socket = io();
 var pl = new Object()
-pl.playerAName = "PlayerOne";
-pl.playerBName = "PlayerTwo";
+pl.playerAName = "Briar";
+pl.playerBName = "Lexi";
 pl.playerALife = 20;
 pl.playerBLife = 20;
 
